@@ -78,8 +78,10 @@ if [ $? -eq 0 ]; then
     echo ""
 else
     echo ""
-    echo -e "\e[01;31m[!]\e[00m Unable to find the required gcc program, install i586-mingw32msvc-gcc and try again"
+    echo -e "\e[01;31m[!]\e[00m Unable to find the required gcc program, Please wait while we try to install it for you.Re-run after installation"
     echo ""
+    #In-case you don't have the required gcc, we'll do it for ya. ;) 
+    apt-get install mingw32
     exit 1
 fi
 
