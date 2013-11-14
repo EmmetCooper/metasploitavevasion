@@ -15,7 +15,7 @@ Released under AGPL see LICENSE for more information
 Installing    
 =======================
 
-    git clone https://github.com/nccgroup/metasploitavevasion.git
+    git clone https://github.com/emmetcooper/metasploitavevasion.git
 
 chmod +x the avoid.sh file before use.
 
