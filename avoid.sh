@@ -262,7 +262,7 @@ ls build.c >/dev/null 2>&1
 if [ $? -eq 0 ];then        #incase build.c already exist,remove it
     rm build.c
 else
-    ""
+    echo ""
 fi
 echo ""
 echo '#include <stdio.h>' >> build.c
