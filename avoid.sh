@@ -258,6 +258,12 @@ else
 fi
 
 # build the c file ready for compile
+ls build.c >/dev/null 2>&1
+if [ $? -eq 0 ];then        #incase build.c already exist,remove it
+    rm build.c
+else
+    ""
+fi
 echo ""
 echo '#include <stdio.h>' >> build.c
 echo 'unsigned char padding[]=' >> build.c
